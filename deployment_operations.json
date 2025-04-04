@@ -1,0 +1,28 @@
+[
+  {
+    "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.Resources/deployments/52711649-885e-4dc8-bf4d-a2ade4c6247f/operations/FBE47088F8C372FF",
+    "operationId": "FBE47088F8C372FF",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Failed",
+      "timestamp": "2025-04-03T22:29:15.3111658Z",
+      "duration": "PT19.3413872S",
+      "trackingId": "dd52894c-6774-42f2-ba0f-e7b376b19ab9",
+      "statusCode": "Conflict",
+      "statusMessage": {
+        "status": "Failed",
+        "error": {
+          "code": "SubscriptionNotRegistered",
+          "message": "Resource provider [N/A] isn't registered with Subscription [N/A]. Please see troubleshooting guide, available here: https://aka.ms/register-resource-provider",
+          "details": [],
+          "additionalInfo": []
+        }
+      },
+      "targetResource": {
+        "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.MachineLearningServices/workspaces/laboratiorioai900/onlineEndpoints/laboratiorioai900-hxprf",
+        "resourceType": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints",
+        "resourceName": "laboratiorioai900/laboratiorioai900-hxprf"
+      }
+    }
+  }
+]
