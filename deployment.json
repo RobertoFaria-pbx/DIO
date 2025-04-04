@@ -1,0 +1,172 @@
+{
+  "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.Resources/deployments/52711649-885e-4dc8-bf4d-a2ade4c6247f",
+  "name": "52711649-885e-4dc8-bf4d-a2ade4c6247f",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "15965137100831360297",
+    "parameters": {
+      "workspaceName": {
+        "type": "String",
+        "value": "laboratiorioai900"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "deploymentTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "modelName": {
+        "type": "String",
+        "value": "mslearnauto2"
+      },
+      "modelVersion": {
+        "type": "String",
+        "value": "1"
+      },
+      "onlineEndpointName": {
+        "type": "String",
+        "value": "laboratiorioai900-hxprf"
+      },
+      "onlineDeploymentName": {
+        "type": "String",
+        "value": "mslearnauto2-1"
+      },
+      "instanceCount": {
+        "type": "String",
+        "value": "3"
+      },
+      "egressPublicNetworkAccess": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "computeType": {
+        "type": "String",
+        "value": "Managed"
+      },
+      "appInsightsEnabled": {
+        "type": "String",
+        "value": "false"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Standard_E2s_v3"
+      },
+      "instanceType": {
+        "type": "String",
+        "value": "defaultinstancetype"
+      },
+      "scoringTimeoutSeconds": {
+        "type": "String",
+        "value": "PT90S"
+      },
+      "maxConcurrentRequestsPerInstance": {
+        "type": "String",
+        "value": "1"
+      },
+      "onlineEndpointIdentity": {
+        "type": "Object",
+        "value": {
+          "type": "SystemAssigned"
+        }
+      },
+      "onlineEndpointTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "onlineEndpointProperties": {
+        "type": "Object",
+        "value": {
+          "traffic": {},
+          "authMode": "Key",
+          "mirrorTraffic": {},
+          "publicNetworkAccess": "Enabled"
+        }
+      },
+      "onlineEndpointPropertiesTrafficUpdate": {
+        "type": "Object",
+        "value": {
+          "traffic": {
+            "mslearnauto2-1": 100
+          },
+          "authMode": "Key",
+          "mirrorTraffic": {},
+          "publicNetworkAccess": "Enabled"
+        }
+      }
+    },
+    "mode": "Incremental",
+    "provisioningState": "Failed",
+    "timestamp": "2025-04-03T22:29:15.5854322Z",
+    "correlationId": "4beca4c9-1186-4bca-846b-5e553e162b03",
+    "providers": [
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.MachineLearningServices",
+        "resourceTypes": [
+          {
+            "resourceType": "workspaces/onlineEndpoints",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "workspaces/onlineEndpoints/deployments",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.MachineLearningServices/workspaces/laboratiorioai900/onlineEndpoints/laboratiorioai900-hxprf/deployments/mslearnauto2-1",
+            "resourceType": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments",
+            "resourceName": "laboratiorioai900/laboratiorioai900-hxprf/mslearnauto2-1"
+          }
+        ],
+        "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.Resources/deployments/updateEndpointWithTraffic-laboratiorioai900-hxprf",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "updateEndpointWithTraffic-laboratiorioai900-hxprf"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.MachineLearningServices/workspaces/laboratiorioai900/onlineEndpoints/laboratiorioai900-hxprf",
+            "resourceType": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints",
+            "resourceName": "laboratiorioai900/laboratiorioai900-hxprf"
+          }
+        ],
+        "id": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.MachineLearningServices/workspaces/laboratiorioai900/onlineEndpoints/laboratiorioai900-hxprf/deployments/mslearnauto2-1",
+        "resourceType": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments",
+        "resourceName": "laboratiorioai900/laboratiorioai900-hxprf/mslearnauto2-1"
+      }
+    ],
+    "error": {
+      "code": "DeploymentFailed",
+      "target": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.Resources/deployments/52711649-885e-4dc8-bf4d-a2ade4c6247f",
+      "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+      "details": [
+        {
+          "code": "ResourceDeploymentFailure",
+          "target": "/subscriptions/70b98a2d-da4f-424c-95bb-c6e4ccf8af25/resourceGroups/DIO-Aprendizado/providers/Microsoft.MachineLearningServices/workspaces/laboratiorioai900/onlineEndpoints/laboratiorioai900-hxprf",
+          "message": "The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'."
+        }
+      ]
+    }
+  }
+}
